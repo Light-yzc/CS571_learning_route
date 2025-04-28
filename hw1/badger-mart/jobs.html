@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="jobs.js" defer></script>
+		<title>Badger Mart</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+
+	<body>
+		<header>
+			<img src="assets/banner.png" alt="Badger Mart Banner" height="200" width="600" />
+			<h1>Badger Mart</h1>
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="about-us.html">About Us</a>
+				<a href="order.html">Order</a>
+				<a href="jobs.html">Jobs</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</header>
+		<main>
+			<h2>Help Wanted!</h2>
+			<p>We are currently in need of the following positions...</p>
+			<form onsubmit="submitApplication(event)">
+				<div class="job-option">
+					<input type="radio" id="cashier" name="job" value="Cashier">
+					<label for="cashier" class="job-description">
+						<h3>Cashier</h3>
+						<p class="large-text-wrap">Operates cash registers, handles money transactions, and assists customers during checkout. Cashiers are responsible for providing a fast, friendly, and accurate checkout service.</p>
+					</label>
+				</div>
+
+				<div class="job-option">
+					<input type="radio" id="stocker" name="job" value="Stocker">
+					<label for="stocker" class="job-description">
+						<h3>Stocker</h3>
+						<p class="large-text-wrap">Manages inventory by stocking and organizing goods on the store shelves. Ensures products are displayed neatly and are easily accessible to customers. Also assists in inventory management and reordering of stock.</p>
+					</label>
+				</div>
+
+				<div class="job-option">
+					<input type="radio" id="janitor" name="job" value="Janitor">
+					<label for="janitor" class="job-description">
+						<h3>Janitor</h3>
+						<p class="large-text-wrap">Responsible for the overall cleanliness of the store, including cleaning floors, restrooms, and shelves, and ensuring a hygienic environment for both customers and staff.</p>
+					</label>
+				</div>
+
+				<!-- TODO: Make this appear as a 'primary' button -->
+				<input type="submit" value="Apply", class="primary-button", id = 'job_bt'>
+				 <!-- <button class="primary-button", id = "job_bt">Apply</button> -->
+			</form>
+		</main>
+	</body>
+
+</html>
