@@ -1,0 +1,302 @@
+{
+	"info": {
+		"_postman_id": "b7157aae-7ae8-4e91-9a89-babef9baabc0",
+		"name": "CS571 S25 HW6 Shareable",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9136549"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-CS571-ID",
+						"value": "ENTER_YOUR_BID",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"test123456\",\r\n    \"pin\": \"1234567\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cs571api.cs.wisc.edu/rest/s25/hw6/register",
+					"protocol": "https",
+					"host": [
+						"cs571api",
+						"cs",
+						"wisc",
+						"edu"
+					],
+					"path": [
+						"rest",
+						"s25",
+						"hw6",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-CS571-ID",
+						"value": "ENTER_YOUR_BID",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"test123456\",\r\n    \"pin\": \"1234567\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cs571api.cs.wisc.edu/rest/s25/hw6/login",
+					"protocol": "https",
+					"host": [
+						"cs571api",
+						"cs",
+						"wisc",
+						"edu"
+					],
+					"path": [
+						"rest",
+						"s25",
+						"hw6",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-CS571-ID",
+						"value": "ENTER_YOUR_BID",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cs571api.cs.wisc.edu/rest/s25/hw6/logout",
+					"protocol": "https",
+					"host": [
+						"cs571api",
+						"cs",
+						"wisc",
+						"edu"
+					],
+					"path": [
+						"rest",
+						"s25",
+						"hw6",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Post",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-CS571-ID",
+						"value": "ENTER_YOUR_BID",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"My Test Post\",\r\n    \"content\": \"lorem ipsum dolor sit\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cs571api.cs.wisc.edu/rest/s25/hw6/messages?chatroom=Bascom Hill Hangout",
+					"protocol": "https",
+					"host": [
+						"cs571api",
+						"cs",
+						"wisc",
+						"edu"
+					],
+					"path": [
+						"rest",
+						"s25",
+						"hw6",
+						"messages"
+					],
+					"query": [
+						{
+							"key": "chatroom",
+							"value": "Bascom Hill Hangout"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Posts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-CS571-ID",
+						"value": "ENTER_YOUR_BID",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cs571api.cs.wisc.edu/rest/s25/hw6/messages?chatroom=Bascom Hill Hangout&page=1",
+					"protocol": "https",
+					"host": [
+						"cs571api",
+						"cs",
+						"wisc",
+						"edu"
+					],
+					"path": [
+						"rest",
+						"s25",
+						"hw6",
+						"messages"
+					],
+					"query": [
+						{
+							"key": "chatroom",
+							"value": "Bascom Hill Hangout"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Chatrooms",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-CS571-ID",
+						"value": "ENTER_YOUR_BID",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cs571api.cs.wisc.edu/rest/s25/hw6/chatrooms",
+					"protocol": "https",
+					"host": [
+						"cs571api",
+						"cs",
+						"wisc",
+						"edu"
+					],
+					"path": [
+						"rest",
+						"s25",
+						"hw6",
+						"chatrooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Who Am I?",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-CS571-ID",
+						"value": "ENTER_YOUR_BID",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cs571api.cs.wisc.edu/rest/s25/hw6/whoami",
+					"protocol": "https",
+					"host": [
+						"cs571api",
+						"cs",
+						"wisc",
+						"edu"
+					],
+					"path": [
+						"rest",
+						"s25",
+						"hw6",
+						"whoami"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Post",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "X-CS571-ID",
+						"value": "ENTER_YOUR_BID",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cs571api.cs.wisc.edu/rest/s25/hw6/messages?id=2",
+					"protocol": "https",
+					"host": [
+						"cs571api",
+						"cs",
+						"wisc",
+						"edu"
+					],
+					"path": [
+						"rest",
+						"s25",
+						"hw6",
+						"messages"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

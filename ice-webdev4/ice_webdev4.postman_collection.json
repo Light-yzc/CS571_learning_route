@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "1cb4d130-85a2-4d94-b60d-368431cfeee7",
+		"name": "CS571 S25 ICE WebDev4 Shareable",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9136549"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-CS571-ID",
+						"value": "ENTER_YOUR_BID",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"bucky\",\r\n    \"password\": \"badger\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cs571api.cs.wisc.edu/rest/s25/ice/login",
+					"protocol": "https",
+					"host": [
+						"cs571api",
+						"cs",
+						"wisc",
+						"edu"
+					],
+					"path": [
+						"rest",
+						"s25",
+						"ice",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-CS571-ID",
+						"value": "ENTER_YOUR_BID",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cs571api.cs.wisc.edu/rest/s25/ice/logout",
+					"protocol": "https",
+					"host": [
+						"cs571api",
+						"cs",
+						"wisc",
+						"edu"
+					],
+					"path": [
+						"rest",
+						"s25",
+						"ice",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Comment",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-CS571-ID",
+						"value": "ENTER_YOUR_BID",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"comment\": \"My Test Comment!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cs571api.cs.wisc.edu/rest/s25/ice/comments",
+					"protocol": "https",
+					"host": [
+						"cs571api",
+						"cs",
+						"wisc",
+						"edu"
+					],
+					"path": [
+						"rest",
+						"s25",
+						"ice",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Comments",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-CS571-ID",
+						"value": "ENTER_YOUR_BID",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cs571api.cs.wisc.edu/rest/s25/ice/comments",
+					"protocol": "https",
+					"host": [
+						"cs571api",
+						"cs",
+						"wisc",
+						"edu"
+					],
+					"path": [
+						"rest",
+						"s25",
+						"ice",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
