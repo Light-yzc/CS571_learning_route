@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "ice-mobiledev1",
+    "slug": "ice-mobiledev1",
+    "version": "1.0.0",
+    "newArchEnabled": true,
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ]
+  }
+}

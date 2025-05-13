@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "hw7",
+    "slug": "hw7",
+    "version": "1.0.0",
+    "newArchEnabled": true,
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ]
+  }
+}
