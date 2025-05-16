@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "hw8",
+    "slug": "hw8",
+    "version": "1.0.0",
+    "newArchEnabled": true,
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ]
+  }
+}
