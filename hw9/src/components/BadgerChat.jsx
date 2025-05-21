@@ -90,7 +90,7 @@ export default function App() {
   if (isLoggedIn || tmp_login) {
     return (
       <NavigationContainer>
-        <cur_user.Provider value={cur_name}>
+        <cur_user.Provider value={[cur_name,set_cur_name]}>
         <ChatDrawer.Navigator>
           <ChatDrawer.Screen name="Landing" component={BadgerLandingScreen} />
           {
