@@ -1,0 +1,9 @@
+body {
+  align-items: baseline;
+  margin: 2rem;
+}
+
+#root {
+  padding: 2rem;
+  text-align: center;
+}
