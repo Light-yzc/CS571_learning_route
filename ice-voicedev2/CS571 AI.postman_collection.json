@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "1b8bbdf6-cc7b-41f0-9d98-33a152cecae5",
+		"name": "CS571 AI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9136549"
+	},
+	"item": [
+		{
+			"name": "Completions",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-CS571-ID",
+						"value": "ENTER_YOUR_BID",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"role\": \"assistant\",\r\n        \"content\": \"Welcome to BadgerChatGPT! Ask me anything.\"\r\n    },\r\n    {\r\n        \"role\": \"user\",\r\n        \"content\": \"hey how are you\"\r\n    },\r\n    {\r\n        \"role\": \"assistant\",\r\n        \"content\": \"I'm just a program, so I don't have feelings, but I'm here and ready to help you! How can I assist you today?\"\r\n    },\r\n    {\r\n        \"role\": \"user\",\r\n        \"content\": \"give me a react component pls\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cs571api.cs.wisc.edu/rest/s25/hw11/completions",
+					"protocol": "https",
+					"host": [
+						"cs571api",
+						"cs",
+						"wisc",
+						"edu"
+					],
+					"path": [
+						"rest",
+						"s25",
+						"hw11",
+						"completions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Completions Stream",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-CS571-ID",
+						"value": "ENTER_YOUR_BID",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"role\": \"assistant\",\r\n        \"content\": \"Welcome to BadgerChatGPT! Ask me anything.\"\r\n    },\r\n    {\r\n        \"role\": \"user\",\r\n        \"content\": \"hey how are you\"\r\n    },\r\n    {\r\n        \"role\": \"assistant\",\r\n        \"content\": \"I'm just a program, so I don't have feelings, but I'm here and ready to help you! How can I assist you today?\"\r\n    },\r\n    {\r\n        \"role\": \"user\",\r\n        \"content\": \"give me a react component pls\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cs571api.cs.wisc.edu/rest/s25/hw11/completions-stream",
+					"protocol": "https",
+					"host": [
+						"cs571api",
+						"cs",
+						"wisc",
+						"edu"
+					],
+					"path": [
+						"rest",
+						"s25",
+						"hw11",
+						"completions-stream"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
